@@ -48,88 +48,9 @@ func (v2 *SchemaV2) ProcessV2Schema(actionToken string) *SchemaV2 {
 	return v2
 }
 
-// func (v2 *SchemaV2) RenderV2Schema(actionToken string) * SchemaV2 {
-//
-//   generateV2SchemaHeader(v2)
-//
-//   generateV2SchemaTags(v2)
-//
-//   generateV2SchemaResources(v2)
-//
-//   generateV2SchemaInstruction(v2)
-//
-//   generateV2SchemaEnvironment(v2, actionToken)
-//
-//   generateV2SchemaVisibleOutputs(v2)
-//
-//   generateV2SchemaAssessment(v2)
-//
-//   return v2
-// }
-//
-// func (v2 *SchemaV2) LocationV2Schema(actionToken string) * SchemaV2 {
-//
-//   generateV2SchemaHeader(v2)
-//
-//   generateV2SchemaTags(v2)
-//
-//   generateV2SchemaResources(v2)
-//
-//   generateV2SchemaInstruction(v2)
-//
-//   generateV2SchemaEnvironment(v2, actionToken)
-//
-//   generateV2SchemaVisibleOutputs(v2)
-//
-//   generateV2SchemaAssessment(v2)
-//
-//   return v2
-// }
-//
-// // Name: StartupV2Schema.
-// // Description: Output a V1 schema based on input criteria
-// func (v2 *SchemaV2) StartupV2Schema(actionToken string) * SchemaV2 {
-//
-//   generateV2SchemaHeader(v2)
-//
-//   generateV2SchemaTags(v2)
-//
-//   generateV2SchemaResources(v2)
-//
-//   generateV2SchemaInstruction(v2)
-//
-//   generateV2SchemaEnvironment(v2, actionToken)
-//
-//   generateV2SchemaVisibleOutputs(v2)
-//
-//   generateV2SchemaAssessment(v2)
-//
-//   return v2
-// }
-//
-//
-// // Name: StartupV2Schema.
-// // Description: Output a V1 schema based on input criteria
-// func (v2 *SchemaV2) DeleteV2Schema(actionToken string) * SchemaV2 {
-//
-//   generateV2SchemaHeader(v2)
-//
-//   generateV2SchemaTags(v2)
-//
-//   generateV2SchemaResources(v2)
-//
-//   generateV2SchemaInstruction(v2)
-//
-//   generateV2SchemaEnvironment(v2, actionToken)
-//
-//   generateV2SchemaVisibleOutputs(v2)
-//
-//   generateV2SchemaAssessment(v2)
-//
-//   return v2
-// }
+func (v2 *SchemaV2) WriteV2Schema(filename string, actionToken string) *SchemaV2 {
 
-// OutputVariableV2Schema prints the student visible outputs.
-func (v2 *SchemaV2) OutputVariableV2Schema(labelToken string, referenceToken string) *SchemaV2 {
+  // TODO: Write v2 Schema to a file
+
 	return v2
 }
