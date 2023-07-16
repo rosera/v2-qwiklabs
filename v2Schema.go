@@ -96,5 +96,5 @@ type SchemaV2 struct {
 		URI         string `yaml:"uri"`
 	} `yaml:"resources"`
 	Environment EnvironmentType `yaml:"environment"`
-	Assessment  string          `yaml:"assessment"`
+	Assessment  string          `yaml:"assessment,omitempty"`
 }
