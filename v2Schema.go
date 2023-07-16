@@ -18,7 +18,7 @@ type CustomPropertiesType struct {
 type StartupScriptType struct {
 	Type             string                 `yaml:"type,omitempty"`
 	Path             string                 `yaml:"path,omitempty"`
-	CustomProperties []CustomPropertiesType `yaml:"customproperties,omitempty"`
+	CustomProperties []CustomPropertiesType `yaml:"custom_properties,omitempty"`
 	//	CustomProperties []struct {
 	//		Key       string `yaml:"key"`
 	//		Value     string `yaml:"value,omitempty"`
@@ -36,7 +36,7 @@ type EnvironmentResourceType struct {
 	ID            string            `yaml:"id"`
 	Variant       string            `yaml:"variant,omitempty"`
 	SshKeyUser    string            `yaml:"ssh_key_user,omitempty"`
-	StartupScript StartupScriptType `yaml:"startupscript,omitempty"`
+	StartupScript StartupScriptType `yaml:"startup_script,omitempty"`
 	//			StartupScript struct {
 	//				Type             string `yaml:"type"`
 	//				Path             string `yaml:"path"`

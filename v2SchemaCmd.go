@@ -58,6 +58,7 @@ func (v2 *SchemaV2) UpdateV2SchemaLocation(actionToken string) *SchemaV2 {
 	//			resource.AllowedLocations[1] = "      - us-central1"
 	//		}
 	//	}
+	fmt.Printf("UpdateV2SchemaLocation\n")
 
 	return v2
 }
