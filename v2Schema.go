@@ -32,11 +32,11 @@ type StudentVisibleOutputsType struct {
 }
 
 type EnvironmentResourceType struct {
-	Type          string `yaml:"type"`
-	ID            string `yaml:"id"`
-	Variant       string `yaml:"variant,omitempty"`
-	SshKeyUser    string `yaml:"ssh_key_user,omitempty"`
-	StartupScript StartupScriptType
+	Type          string            `yaml:"type"`
+	ID            string            `yaml:"id"`
+	Variant       string            `yaml:"variant,omitempty"`
+	SshKeyUser    string            `yaml:"ssh_key_user,omitempty"`
+	StartupScript StartupScriptType `yaml:"StartupScript,omitempty"`
 	//			StartupScript struct {
 	//				Type             string `yaml:"type"`
 	//				Path             string `yaml:"path"`
