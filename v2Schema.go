@@ -16,9 +16,9 @@ type CustomPropertiesType struct {
 }
 
 type StartupScriptType struct {
-	Type             string `yaml:"type,omitempty"`
-	Path             string `yaml:"path,omitempty"`
-	CustomProperties []CustomPropertiesType
+	Type             string                 `yaml:"type,omitempty"`
+	Path             string                 `yaml:"path,omitempty"`
+	CustomProperties []CustomPropertiesType `yaml:"CustomProperties,omitempty"`
 	//	CustomProperties []struct {
 	//		Key       string `yaml:"key"`
 	//		Value     string `yaml:"value,omitempty"`
