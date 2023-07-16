@@ -55,7 +55,7 @@ func (v2 *SchemaV2) UpdateV2SchemaLocation(actionToken string) *SchemaV2 {
 		// GCP Project settings
 		if resource.Type == "gcp_project" {
 			// TODO: Update the allowed_location value
-			resource.AllowedLocations[0] = "      - us-central1"
+			resource.AllowedLocations[1] = "      - us-central1"
 		}
 	}
 
