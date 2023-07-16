@@ -5,6 +5,7 @@ Copyright © 2022 Rich Rose <richardrose@google.com>
 package v2
 
 import (
+  "fmt"
 	"gopkg.in/yaml.v3"
 	"io/ioutil"
 )
@@ -48,9 +49,33 @@ func (v2 *SchemaV2) ProcessV2Schema(actionToken string) *SchemaV2 {
 	return v2
 }
 
-func (v2 *SchemaV2) WriteV2Schema(filename string, actionToken string) *SchemaV2 {
 
-  // TODO: Write v2 Schema to a file
+func (v2 *SchemaV2) UpdateV2SchemaLocation(actionToken string) *SchemaV2 {
+
+	for _, resource := range v2.Environment.Resources {
+		// GCP Project settings
+		if resource.Type == "gcp_project" {
+      // TODO: Update the allowed_location value
+      resource.AllowedLocations[0] = "      - us-central1"
+    }
+  }
 
 	return v2
+}
+
+
+func (v2 *SchemaV2) WriteV2Schema(filename string, actionToken string) error {
+
+  // TODO: Write v2 Schema to a file
+  yamlData, err := yaml.Marshal(v2)
+	if err != nil {
+		return fmt.Errorf("failed to marshal data to YAML: %v", err)
+	}
+
+	err = ioutil.WriteFile(filename, yamlData, 0644)
+	if err != nil {
+		return fmt.Errorf("failed to write YAML to file: %v", err)
+	}
+
+	return nil
 }
