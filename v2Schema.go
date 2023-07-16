@@ -52,7 +52,7 @@ type EnvironmentResourceType struct {
 		CustomProperties []struct {
 			Key       string `yaml:"key,omitempty"`
 			Reference string `yaml:"reference,omitempty"`
-		} `yaml:"custom_properties"`
+		} `yaml:"custom_properties,omitempty"`
 	} `yaml:"cleanup_script,omitempty"`
 	AllowedLocations []string `yaml:"allowed_locations,omitempty"`
 	Permissions      []struct {
