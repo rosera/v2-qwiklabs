@@ -59,6 +59,7 @@ func (v2 *SchemaV2) UpdateV2SchemaLocation(actionToken string) *SchemaV2 {
 	//		}
 	//	}
 	fmt.Printf("UpdateV2SchemaLocation\n")
+	fmt.Printf("Dont call this function yet!\n")
 
 	return v2
 }
