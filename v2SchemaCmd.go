@@ -51,13 +51,13 @@ func (v2 *SchemaV2) ProcessV2Schema(actionToken string) *SchemaV2 {
 
 func (v2 *SchemaV2) UpdateV2SchemaLocation(actionToken string) *SchemaV2 {
 
-	for _, resource := range v2.Environment.Resources {
-		// GCP Project settings
-		if resource.Type == "gcp_project" {
-			// TODO: Update the allowed_location value
-			resource.AllowedLocations[1] = "      - us-central1"
-		}
-	}
+	//	for _, resource := range v2.Environment.Resources {
+	//		// GCP Project settings
+	//		if resource.Type == "gcp_project" {
+	//			// TODO: Update the allowed_location value
+	//			resource.AllowedLocations[1] = "      - us-central1"
+	//		}
+	//	}
 
 	return v2
 }
