@@ -50,7 +50,7 @@ func generateV2SchemaEnvironment(v2 *SchemaV2, actionToken string) {
 				fmt.Printf("    variant: %s\n", resource.Variant)
 			}
 
-			fmt.Printf("    ssh_key_user: %s\n", resource.SshKeyUser)
+			fmt.Printf("    ssh_key_user: %s\n", resource.SSHKeyUser)
 
 			// STARTUP SCRIPT
 			if actionToken == "qwiklabs" {
