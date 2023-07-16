@@ -16,8 +16,8 @@ type CustomPropertiesType struct {
 }
 
 type StartupScriptType struct {
-	Type             string `yaml:"type"`
-	Path             string `yaml:"path"`
+	Type             string `yaml:"type,omitempty"`
+	Path             string `yaml:"path,omitempty"`
 	CustomProperties []CustomPropertiesType
 	//	CustomProperties []struct {
 	//		Key       string `yaml:"key"`
@@ -47,11 +47,11 @@ type EnvironmentResourceType struct {
 	//				} `yaml:"custom_properties"`
 	//			} `yaml:"startup_script,omitempty"`
 	CleanupScript struct {
-		Type             string `yaml:"type"`
-		Path             string `yaml:"path"`
+		Type             string `yaml:"type,omitempty"`
+		Path             string `yaml:"path,omitempty"`
 		CustomProperties []struct {
-			Key       string `yaml:"key"`
-			Reference string `yaml:"reference"`
+			Key       string `yaml:"key,omitempty"`
+			Reference string `yaml:"reference,omitempty"`
 		} `yaml:"custom_properties"`
 	} `yaml:"cleanup_script,omitempty"`
 	AllowedLocations []string `yaml:"allowed_locations,omitempty"`
