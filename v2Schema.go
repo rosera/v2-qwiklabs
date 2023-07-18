@@ -5,8 +5,8 @@ Copyright © 2022 Rich Rose <richardrose@google.com>
 package v2
 
 type InstructionType struct {
-	Type string `yaml:"type"`
-	URI  string `yaml:"uri"`
+	Type string `yaml:"type,omitempty"`
+	URI  string `yaml:"uri,omitempty"`
 }
 
 type CustomPropertiesType struct {
@@ -87,7 +87,7 @@ type SchemaV2 struct {
 	Credits       int             `yaml:"credits"`
 	Level         string          `yaml:"level"`
 	Tags          []string        `yaml:"tags"`
-	Instruction   InstructionType `yaml:"instruction"`
+	Instruction   InstructionType `yaml:"instruction,omitempty"`
 	Resources     []struct {
 		Type        string `yaml:"type"`
 		ID          string `yaml:"id"`
